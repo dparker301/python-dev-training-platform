@@ -1,1 +1,5 @@
 ![Python CI](https://github.com/dparker301/python-dev-training-platform/actions/workflows/ci.yml/badge.svg)
+![Python CI](https://github.com/dparker301/python-dev-training-platform/actions/workflows/ci.yml/badge.svg)
+![License](https://img.shields.io/github/license/dparker301/python-dev-training-platform.svg)
+![Python](https://img.shields.io/badge/Python-3.12-blue)
+![Terraform](https://img.shields.io/badge/Terraform-HashiCorp%20Cloud-purple)
