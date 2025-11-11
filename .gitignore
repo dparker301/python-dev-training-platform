@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
+
+# Archives & large binaries
+*.zip
+*.tar.gz
+awscliv2.zip
+gitleaks_*_linux_x64*
+pgdata/
+
+# Local env
+.env
