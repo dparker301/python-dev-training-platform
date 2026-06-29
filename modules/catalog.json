@@ -1,0 +1,101 @@
+{
+  "tracks": [
+    {
+      "id": "python-core",
+      "title": "Python Core",
+      "desc": "Syntax, testing, packaging, virtualenvs"
+    },
+    {
+      "id": "web",
+      "title": "Web (Flask & FastAPI)",
+      "desc": "REST APIs, templates, auth, deployment"
+    },
+    {
+      "id": "aws",
+      "title": "AWS + Python",
+      "desc": "boto3, S3, Lambda, IAM, CloudWatch"
+    },
+    {
+      "id": "ansible",
+      "title": "Ansible + Python",
+      "desc": "Provisioning, roles, Jinja2"
+    },
+    {
+      "id": "sql",
+      "title": "SQL + ETL",
+      "desc": "SQLite, Postgres via Docker, queries"
+    },
+    {
+      "id": "ci-cd",
+      "title": "CI/CD",
+      "desc": "GitHub Actions, Jenkins, GitLab CI, OIDC"
+    },
+    {
+      "id": "security",
+      "title": "Security",
+      "desc": "Bandit, secrets scanning, container scans"
+    }
+  ],
+  "labs": [
+    {
+      "id": "python/basics",
+      "title": "Python Warmup & Testing",
+      "track": "python-core",
+      "level": "beginner"
+    },
+    {
+      "id": "web/flask-starter",
+      "title": "Flask Starter API + Templates",
+      "track": "web",
+      "level": "beginner"
+    },
+    {
+      "id": "web/fastapi-starter",
+      "title": "FastAPI Starter (Async + OpenAPI)",
+      "track": "web",
+      "level": "beginner"
+    },
+    {
+      "id": "aws/s3-basics",
+      "title": "S3 with boto3: upload/download/list",
+      "track": "aws",
+      "level": "beginner"
+    },
+    {
+      "id": "aws/lambda-hello",
+      "title": "Hello Lambda with API Gateway",
+      "track": "aws",
+      "level": "intermediate"
+    },
+    {
+      "id": "ansible/provision-nginx",
+      "title": "Provision Nginx with Ansible",
+      "track": "ansible",
+      "level": "beginner"
+    },
+    {
+      "id": "sql/sqlite-etl",
+      "title": "SQLite ETL mini-pipeline",
+      "track": "sql",
+      "level": "beginner"
+    },
+    {
+      "id": "sql/postgres",
+      "title": "Postgres via Docker + psycopg",
+      "track": "sql",
+      "level": "beginner"
+    },
+    {
+      "id": "ci-cd/gha-pytest-flake8",
+      "title": "CI: pytest + flake8 on PR",
+      "track": "ci-cd",
+      "level": "beginner"
+    },
+    {
+      "id": "ci-cd/oidc-terraform",
+      "title": "Terraform OIDC for GitHub Actions",
+      "track": "ci-cd",
+      "level": "intermediate"
+    }
+  ]
+}
