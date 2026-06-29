@@ -1,4 +1,4 @@
-#!/home/lparker/projects/.venv/bin/python3
+#!/home/lparker/projects/python-dev-training-platform/.venv/bin/python
 
 import sys
 import json
