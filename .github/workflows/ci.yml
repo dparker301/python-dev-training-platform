@@ -19,7 +19,10 @@ jobs:
       - name: Bandit security scan
         run: bandit -r projects -q || true
       - name: Tests
-        run: pytest -q
+        run: |
+          PYTHONPATH=projects/python/basics pytest projects/python/basics/tests -q
+          PYTHONPATH=projects/web/flask-starter pytest projects/web/flask-starter/tests -q
+          PYTHONPATH=projects/web/fastapi-starter pytest projects/web/fastapi-starter/tests -q
   aws_assume_role_check:
     runs-on: ubuntu-latest
     needs: build

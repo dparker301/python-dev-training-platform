@@ -13,3 +13,4 @@ bandit==1.7.9
 pre-commit==3.8.0
 #gitleaks==0.16.3
 psycopg2-binary==2.9.9
+httpx
