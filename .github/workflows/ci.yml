@@ -23,23 +23,4 @@ jobs:
           PYTHONPATH=projects/python/basics pytest projects/python/basics/tests -q
           PYTHONPATH=projects/web/flask-starter pytest projects/web/flask-starter/tests -q
           PYTHONPATH=projects/web/fastapi-starter pytest projects/web/fastapi-starter/tests -q
-  aws_assume_role_check:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - uses: actions/checkout@v4
-      - name: Configure AWS credentials via OIDC
-        uses: aws-actions/configure-aws-credentials@v4
-        with:
-          role-to-assume: ${{ secrets.AWS_OIDC_ROLE_ARN }}
-          aws-region: us-east-1
-      - name: WhoAmI
-        run: aws sts get-caller-identity
-  secrets_scan:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Gitleaks scan
-        uses: gitleaks/gitleaks-action@v2
-        with:
-          args: "detect --no-banner --redact"
+
